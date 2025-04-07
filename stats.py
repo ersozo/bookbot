@@ -1,5 +1,5 @@
 def get_book_text(path):
-    with open(path) as f:
+    with open(path, encoding="utf-8", errors="replace") as f:
         file_contents = f.read()
         return file_contents
 
